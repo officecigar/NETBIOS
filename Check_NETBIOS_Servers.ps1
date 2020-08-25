@@ -27,7 +27,9 @@ Param(
 
 
 
-begin{}
+begin{$host.UI.RawUI.WindowTitle = "Check Netbios"
+
+      }
 process{
     foreach ($computer in $computername) {
         Write-Verbose "about to query $computer"
